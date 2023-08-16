@@ -28,6 +28,26 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">✍🏻 Ultimos Post</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + post.slug}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+
+  <div>
     <div class="text-3xl w-full font-bold mb-2">Mis ultimos proyectos {"</>"}</div>
   </div>
 
@@ -55,23 +75,5 @@ const last_posts = posts.slice(0, 3);
     badge="2021-2023"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">✍🏻 Ultimos Post</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
+  
 </BaseLayout>
