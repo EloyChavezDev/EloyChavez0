@@ -3,7 +3,7 @@ title: "5 Tips para perder el miedo a hablar en público remotamentes"
 description: "La vida es un viaje lleno de sorpresas y descubrimientos. A menudo, nos encontramos en una búsqueda constante para encontrar nuestra verdadera pasión, aquella actividad que nos llena de satisfacción y propósito."
 pubDate: "Aug 27 2022"
 heroImage: "/EloyChavez_platziconf.png"
-badge: "Aug 27 2023"
+badge: "Aug 27 2022"
 ---
 
 > Es normal sentir miedo cuando hablas en público
