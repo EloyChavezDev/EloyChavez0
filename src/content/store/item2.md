@@ -1,15 +1,20 @@
 ---
-title: "Demo Item 2"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-custom_link_label: "Custom Btn"
-custom_link: "https://customurl.com/"
-updatedDate: "Sep 11 2022"
-pricing: "$10"
-oldPricing: "$25.5"
-checkoutUrl: "https://checkouturl.com/"
-heroImage: "/itemPreview.png"
+title: "Steam - Iron Brigade"
+description: "Únete a la Brigada de Trincheras Móviles y protege a la humanidad de la diabólica amenaza de las monovisiones en este juego de disparos y defensa de torres creado por Tim Schafer, de Double Fine Productions."
+custom_link_label: "Preview"
+custom_link: "https://store.steampowered.com/app/115120/Iron_Brigade"
+updatedDate: "Aug 19 2023"
+pricing: "$5 USD"
+oldPricing: "$10"
+badge: "PC"
+checkoutUrl: "https://www.paypal.com/invoice/p/#MAWMH8WV7932WVY5"
+heroImage: "/Iron_Brigade.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+### Sobre este juego
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Únete a la Brigada de Trincheras Móviles y protege a la humanidad de la diabólica amenaza de las monovisiones en este juego de disparos y defensa de torres creado por Tim Schafer, de Double Fine Productions. Usa una combinación de potencia de fuego móvil y defensas fijas para inclinar la balanza a tu favor en la guerra. Personaliza tu trinchera con miles de posibles equipamientos. Marcha codo con codo con aliados de todo el mundo mientras te abres paso luchando por Europa, África y el Pacífico.
+
+### Requisitos del sistema
+
+SO: Windows XP / Vista / 7 Procesador: Intel Core 2 Duo a 2 GHz / AMD Athlon 64 a 2 GHz Memoria: 1 GB de RAM Gráficos: nVidia 8800 / ATI 3850 con 256 MB de VRAM o superior Versión de DirectX®: 9.0c Disco Duro: 1.8 GB de espacio libre Sonido: Dispositivo compatible con DirectX Otros Requisitos: Conexión a Internet de banda ancha. Es necesaria una cuenta de Games for Windows LIVE
