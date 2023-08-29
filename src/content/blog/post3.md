@@ -1,6 +1,6 @@
 ---
 title: "Cómo Fortnite me Enseñó que la Constancia es la Clave para Alcanzar Nuestras Metas"
-description: En la era digital actual, debemos ver los videojuegos han dejado de ser solo una forma de entretenimiento para convertirse en plataformas de aprendizaje sorprendentes. 
+description: "En la era digital actual, debemos ver los videojuegos han dejado de ser solo una forma de entretenimiento para convertirse en plataformas de aprendizaje sorprendentes."
 pubDate: "Aug 29 2023"
 heroImage: "/Fortnite_Educa.png"
 badge: "Aug 29 2023"
