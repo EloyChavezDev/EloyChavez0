@@ -1,7 +1,7 @@
 ---
 title: "Ciberseguridad y Privacidad: Pilares Esenciales para la Protección Empresarial"
 description: "🔒 Descubre cómo proteger la privacidad de tu empresa y fortalecer su seguridad en línea."
-pubDate: "Feb 01 2024"
+pubDate: "Feb 03 2024"
 heroImage: "/ProteccionEmpresarial.jpg"
 badge: "Feb 03 2024"
 ---
