@@ -1,6 +1,6 @@
 ---
 title: "Protegiendo tu Mundo Digital: 10 Consejos Cruciales de Ciberseguridad 🛡️"
-description: ¡Hola, lectores conscientes de la seguridad en línea! En un mundo cada vez más conectado, la ciberseguridad se vuelve esencial para proteger nuestros datos y mantenernos a salvo en el vasto océano digital. Aquí te presentamos los 10 tips más importantes para fortalecer tu defensa cibernética."
+description: "¡Hola, lectores conscientes de la seguridad en línea! En un mundo cada vez más conectado, la ciberseguridad se vuelve esencial para proteger nuestros datos y mantenernos a salvo en el vasto océano digital. Aquí te presentamos los 10 tips más importantes para fortalecer tu defensa cibernética."
 pubDate: "Feb 01 2024"
 heroImage: "/Consejos_Cruciales_de_Ciberseguridad.png"
 badge: "Feb 01 2024"
