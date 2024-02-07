@@ -6,6 +6,10 @@ import { getCollection } from "astro:content";
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const last_posts = posts.slice(0, 3);
+
+<script src="https://tryhackme.com/badge/2740252"></script>
+
+
 ---
 
 <BaseLayout sideBarActiveItemID="home">
