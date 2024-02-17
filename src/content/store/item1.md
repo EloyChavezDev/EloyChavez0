@@ -1,20 +1,18 @@
 ---
-title: "Steam - Iron Brigade"
-description: "Únete a la Brigada de Trincheras Móviles y protege a la humanidad de la diabólica amenaza de las monovisiones en este juego de disparos y defensa de torres creado por Tim Schafer, de Double Fine Productions."
-custom_link_label: "Preview"
-custom_link: "https://store.steampowered.com/app/115120/Iron_Brigade"
-updatedDate: "Aug 19 2023"
-pricing: "$5 USD"
-oldPricing: "$10"
-badge: "PC"
-checkoutUrl: "https://www.paypal.com/invoice/p/#MAWMH8WV7932WVY5"
-heroImage: "/Iron_Brigade.png"
+title: "El Camino de Rex"
+description: "En un universo asolado por la guerra, el Capitán Rex, un valiente soldado clon, se enfrenta a una encrucijada. Después de años de luchar junto al Escuadrón 501, Rex comienza a cuestionar su papel como simple soldado."
+custom_link_label: "Descargar"
+custom_link: "/public/El Camino de Rex.pdf"
+updatedDate: "Feb 17 2024"
+pricing: "Escrito por: EloyChavezDev"
+oldPricing: ""
+badge: "Star Wars"
+checkoutUrl: "https://www.paypal.com/donate/?hosted_button_id=BJMKZERS2JH4W"
+heroImage: "/ElCaminodeRex.jpeg"
 ---
+### Una Historia de Transformación y Redención
+En un universo asolado por la guerra, el Capitán Rex, un valiente soldado clon, se enfrenta a una encrucijada. Después de años de luchar junto al Escuadrón 501, Rex comienza a cuestionar su papel como simple soldado. 
+¿Hay algo más allá de las órdenes y la violencia? 
+¿Puede un soldado encontrar la luz en medio de la oscuridad?
 
-### Sobre este juego
-
-Únete a la Brigada de Trincheras Móviles y protege a la humanidad de la diabólica amenaza de las monovisiones en este juego de disparos y defensa de torres creado por Tim Schafer, de Double Fine Productions. Usa una combinación de potencia de fuego móvil y defensas fijas para inclinar la balanza a tu favor en la guerra. Personaliza tu trinchera con miles de posibles equipamientos. Marcha codo con codo con aliados de todo el mundo mientras te abres paso luchando por Europa, África y el Pacífico.
-
-### Requisitos del sistema
-
-SO: Windows XP / Vista / 7 Procesador: Intel Core 2 Duo a 2 GHz / AMD Athlon 64 a 2 GHz Memoria: 1 GB de RAM Gráficos: nVidia 8800 / ATI 3850 con 256 MB de VRAM o superior Versión de DirectX®: 9.0c Disco Duro: 1.8 GB de espacio libre Sonido: Dispositivo compatible con DirectX Otros Requisitos: Conexión a Internet de banda ancha. Es necesaria una cuenta de Games for Windows LIVE
+Acompaña a Rex en su viaje épico mientras abandona su pasado y se adentra en un mundo de misterio y Fuerza. Junto a su amiga y mentora, Ahsoka Tano, Rex descubre que su verdadero propósito va más allá de la guerra. Se convierte en Kael Vos, un Jedi comprometido con la paz y la justicia.
