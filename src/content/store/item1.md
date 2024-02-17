@@ -2,7 +2,7 @@
 title: "El Camino de Rex"
 description: "En un universo asolado por la guerra, el Capitán Rex, un valiente soldado clon, se enfrenta a una encrucijada. Después de años de luchar junto al Escuadrón 501, Rex comienza a cuestionar su papel como simple soldado."
 custom_link_label: "Descargar"
-custom_link: "/public/El_Camino_de_Rex.pdf"
+custom_link: "/El_Camino_de_Rex.pdf"
 updatedDate: "Feb 17 2024"
 pricing: "Escrito por: @EloyChavezDev"
 oldPricing: ""
