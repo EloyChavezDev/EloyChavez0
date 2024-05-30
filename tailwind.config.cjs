@@ -2,7 +2,10 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				'sans': ['"Press Start 2P"', ...defaultTheme.fontFamily.sans],
+		},
 	},
 	plugins: [require("@tailwindcss/typography"),require("daisyui")],
 	daisyui: {
