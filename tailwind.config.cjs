@@ -2,10 +2,7 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {
-			fontFamily: {
-				'sans': ['"Press Start 2P"', ...defaultTheme.fontFamily.sans],
-		},
+		extend: {},
 	},
 	plugins: [require("@tailwindcss/typography"),require("daisyui")],
 	daisyui: {
@@ -14,4 +11,15 @@ module.exports = {
 		logs: false, // Shows info about daisyUI version and used config in the console when building your CSS
 	  }
 }
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        'sans': ['"Proxima Nova"', ...defaultTheme.fontFamily.sans],
+      },
+    }
+  }
 }
