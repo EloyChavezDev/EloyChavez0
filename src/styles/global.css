@@ -3,9 +3,6 @@
 }
 
 @font-face {
-    font-family: 'Press Start 2P';
+    font-family: 'PressStart2P';
     src: url('/PressStart2P-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
   }
