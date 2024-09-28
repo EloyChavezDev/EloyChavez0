@@ -8,6 +8,40 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
 const last_posts = posts.slice(0, 3);
 ---
 
+<script>
+        // Array con las contribuciones manuales para cada día (se pueden ajustar los valores)
+        const manualContributions = [
+            5, 10, 0, 7, 25, 30, 15, 0, 0, 3, 8, 12, 0, 0, 35, 28, 5, // Semana 1 y 2
+            // Añadir más valores para completar los 365 días del año
+        ];
+
+        const calendarElement = document.getElementById('calendar');
+        const daysInYear = 365;
+
+        for (let i = 0; i < daysInYear; i++) {
+            const day = document.createElement('div');
+            day.classList.add('day');
+
+            // Obtener el valor de contribuciones del array manual
+            const contributions = manualContributions[i] || 0; // Valor por día, si no está definido, es 0
+
+            // Cambiar el color del día según las contribuciones
+            if (contributions > 0) {
+                if (contributions < 10) {
+                    day.style.backgroundColor = "#9be9a8"; // 1-9 contribuciones
+                } else if (contributions < 20) {
+                    day.style.backgroundColor = "#40c463"; // 10-19 contribuciones
+                } else if (contributions < 30) {
+                    day.style.backgroundColor = "#30a14e"; // 20-29 contribuciones
+                } else {
+                    day.style.backgroundColor = "#216e39"; // 30+ contribuciones
+                }
+            }
+
+            calendarElement.appendChild(day);
+        }
+    </script>
+
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hola 👋</div>
@@ -110,39 +144,4 @@ const last_posts = posts.slice(0, 3);
             30+ contribuciones
         </div>
     </div>
-
-<script>
-        // Array con las contribuciones manuales para cada día (se pueden ajustar los valores)
-        const manualContributions = [
-            5, 10, 0, 7, 25, 30, 15, 0, 0, 3, 8, 12, 0, 0, 35, 28, 5, // Semana 1 y 2
-            // Añadir más valores para completar los 365 días del año
-        ];
-
-        const calendarElement = document.getElementById('calendar');
-        const daysInYear = 365;
-
-        for (let i = 0; i < daysInYear; i++) {
-            const day = document.createElement('div');
-            day.classList.add('day');
-
-            // Obtener el valor de contribuciones del array manual
-            const contributions = manualContributions[i] || 0; // Valor por día, si no está definido, es 0
-
-            // Cambiar el color del día según las contribuciones
-            if (contributions > 0) {
-                if (contributions < 10) {
-                    day.style.backgroundColor = "#9be9a8"; // 1-9 contribuciones
-                } else if (contributions < 20) {
-                    day.style.backgroundColor = "#40c463"; // 10-19 contribuciones
-                } else if (contributions < 30) {
-                    day.style.backgroundColor = "#30a14e"; // 20-29 contribuciones
-                } else {
-                    day.style.backgroundColor = "#216e39"; // 30+ contribuciones
-                }
-            }
-
-            calendarElement.appendChild(day);
-        }
-    </script>
-
 </BaseLayout>
