@@ -84,32 +84,3 @@
 </div>
 <script src="https://js.linkz.ai/?key=100882388488649883488"></script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="eloychavezdev" data-description="Support me on Buy me a coffee!" data-message="¿Me invitas un café? ♥" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-<script>
-    const manualContributions = [
-      5, 10, 0, 7, 25, 30, 15, 0, 0, 3, 8, 12, 0, 0, 35, 28, 5,
-    ];
-
-    const calendarElement = document.getElementById('calendar');
-    const daysInYear = 365;
-
-    for (let i = 0; i < daysInYear; i++) {
-      const day = document.createElement('div');
-      day.classList.add('day');
-
-      const contributions = manualContributions[i] || 0;
-
-      if (contributions > 0) {
-        if (contributions < 10) {
-          day.style.backgroundColor = "#9be9a8"; 
-        } else if (contributions < 20) {
-          day.style.backgroundColor = "#40c463"; 
-        } else if (contributions < 30) {
-          day.style.backgroundColor = "#30a14e"; 
-        } else {
-          day.style.backgroundColor = "#216e39"; 
-        }
-      }
-
-      calendarElement.appendChild(day);
-    }
-  </script>
