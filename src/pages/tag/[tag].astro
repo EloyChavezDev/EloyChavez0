@@ -7,19 +7,26 @@ export async function getStaticPaths() {
   const posts = await getCollection("blog");
   
   // Obtener todas las etiquetas únicas de todos los posts
-  const tags = [...new Set(posts.flatMap(post => post.data.tags || []))];
+  const tags = [...new Set(posts.flatMap(post => post.data.tags || []))] as string[];
   
   // Crear una ruta para cada etiqueta
-  return tags.map(tag => ({
-    params: { tag: encodeURIComponent(tag) },
-    props: { 
-      tag,
-      posts: posts.filter(post => post.data.tags && post.data.tags.includes(tag))
-    }
-  }));
+  return tags.map(tag => {
+    // Usar la etiqueta tal cual para los parámetros
+    return {
+      params: { tag },
+      props: { 
+        tag,
+        posts: posts.filter(post => 
+          post.data.tags && post.data.tags.includes(tag)
+        )
+      }
+    };
+  });
 }
 
-const { tag } = Astro.props;
+// El parámetro tag vendrá ya en el formato correcto en los parámetros
+const { tag } = Astro.params;
+// Obtener los posts de las props
 const { posts } = Astro.props;
 ---
 

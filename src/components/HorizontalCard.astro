@@ -30,7 +30,7 @@ import { Image } from "@astrojs/image/components";
           {
             tags &&
               tags.map((tag) => (
-                <a href={`/tag/${encodeURIComponent(tag)}`} class="badge badge-outline hover:bg-base-300">
+                <a href={`/tag/${tag}`} class="badge badge-outline hover:bg-base-300">
                   {tag}
                 </a>
               ))
