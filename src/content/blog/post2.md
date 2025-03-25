@@ -4,6 +4,7 @@ description: "La vida es un viaje lleno de sorpresas y descubrimientos. A menudo
 pubDate: "Jul 28 2023"
 heroImage: "/EloyChavezDev_Pasion.png"
 badge: "Jul 28 2023"
+tags: ["educación", "enseñanza", "desarrollo personal", "pasión"]
 ---
 
 La vida es un viaje lleno de sorpresas y descubrimientos. A menudo, nos encontramos en una búsqueda constante para encontrar nuestra verdadera pasión, aquella actividad que nos llena de satisfacción y propósito. En mi caso, este emocionante camino de autodescubrimiento comenzó durante una conferencia sobre ciberseguridad que yo mismo impartí en la Universidad Continente Americano, en la cual laboro.

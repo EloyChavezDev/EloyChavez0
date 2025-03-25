@@ -4,6 +4,7 @@ description: "En la era digital actual, debemos ver los videojuegos han dejado d
 pubDate: "Aug 29 2023"
 heroImage: "/Fortnite_Educa.png"
 badge: "Aug 29 2023"
+tags: ["videojuegos", "fortnite", "constancia", "desarrollo personal", "aprendizaje"]
 ---
 En la era digital actual, debemos ver los videojuegos han dejado de ser solo una forma de entretenimiento para convertirse en plataformas de aprendizaje sorprendentes. Un claro ejemplo de esto es Fortnite, el popular videojuego de battle royale que ha cautivado a millones de jugadores en todo el mundo. Más allá de su atractivo visual y su mecánica de juego adictiva, Fortnite tiene lecciones valiosas que ofrecer, incluida una lección fundamental: la importancia de la constancia en la búsqueda de nuestros objetivos y metas. En este artículo, exploraremos cómo Fortnite puede enseñarnos la importancia de la constancia en la vida real y cómo aplicar este principio en nuestro día a día.
 

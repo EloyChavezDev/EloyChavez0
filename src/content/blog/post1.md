@@ -4,6 +4,7 @@ description: "La vida es un viaje lleno de sorpresas y descubrimientos. A menudo
 pubDate: "Aug 27 2022"
 heroImage: "/EloyChavez_platziconf.png"
 badge: "Aug 27 2022"
+tags: ["hablar en público", "oratoria", "consejos", "platziconf"]
 ---
 
 > Es normal sentir miedo cuando hablas en público
@@ -12,7 +13,7 @@ Es la primera frase que escuchamos de Freddy Vega en su curso de como hablar en 
 
 Te invito a imaginar por un momento el estar frente a una multitud de personas que no conoces, que te ven fijamente desde casi todo el mundo, sus miradas centradas en ti, sus oídos atentos a lo que dices y están ahí para escucharte hablar en un evento que sin duda es de los más importantes de América Latina y Habla Hispana. Sientes incertidumbre, ansiedad, nervios, todos desencadenan un miedo que te hace sudar frio e incluso tiemblan tus piernas.
 
-Así me sentí yo minutos antes de participar como Speaker en el Open Stage durante esta PlatziConf 2021, pero cuando comencé a hablar todas esas sensaciones desaparecieron rápidamente, logrando transmitir mi mensaje con la misma pasión que siento por ser parte de esta hermosa comunidad de Platzinautas, es así que desde mi experiencia te compartiré “las técnicas secretas” que use para lograrlo.
+Así me sentí yo minutos antes de participar como Speaker en el Open Stage durante esta PlatziConf 2021, pero cuando comencé a hablar todas esas sensaciones desaparecieron rápidamente, logrando transmitir mi mensaje con la misma pasión que siento por ser parte de esta hermosa comunidad de Platzinautas, es así que desde mi experiencia te compartiré "las técnicas secretas" que use para lograrlo.
 
 ![Imagen promocional Platzi Conf 2021](/platziconf_2021.webp "PlatziConf 2021")
 
