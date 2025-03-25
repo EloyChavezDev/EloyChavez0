@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+// Obtener todas las etiquetas de los posts
+const posts = await getCollection("blog");
+const tags = [...new Set(posts.flatMap(post => post.data.tags || []))];
+
+// Contar posts por etiqueta
+const tagCounts: Record<string, number> = {};
+tags.forEach(tag => {
+  const count = posts.filter(post => post.data.tags && post.data.tags.includes(tag)).length;
+  tagCounts[tag] = count;
+});
+
+// Ordenar etiquetas por cantidad de posts (de mayor a menor)
+const sortedTags = tags.sort((a, b) => tagCounts[b] - tagCounts[a]);
+---
+
+<BaseLayout title="Etiquetas del Blog" sideBarActiveItemID="tags">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Todas las etiquetas</div>
+    <div class="text-gray-500 mt-2">Explora nuestros contenidos por tema</div>
+  </div>
+
+  <div class="mt-8">
+    <div class="flex flex-wrap gap-2">
+      {sortedTags.map((tag) => (
+        <a href={`/tag/${encodeURIComponent(tag)}`} class="badge badge-lg p-4 badge-outline hover:bg-base-300">
+          {tag} <span class="ml-2 opacity-70">({tagCounts[tag]})</span>
+        </a>
+      ))}
+    </div>
+  </div>
+  
+  <div class="mt-8">
+    <a href="/blog" class="btn btn-outline">← Volver al blog</a>
+  </div>
+</BaseLayout> 

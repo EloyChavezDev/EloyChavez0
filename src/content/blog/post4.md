@@ -4,6 +4,7 @@ description: "América Latina, con sus 660 millones de habitantes, es una regió
 pubDate: "Sep 22 2023"
 heroImage: "/Atlantico.png"
 badge: "Sep 22 2023"
+tags: ["tecnología", "América Latina", "transformación digital", "economía", "desarrollo"]
 ---
 América Latina, con sus 660 millones de habitantes y un Producto Interno Bruto (PIB) conjunto de 6 billones de dólares, se encuentra en un momento trascendental de su desarrollo económico y tecnológico. Si consideráramos a esta región como una zona económica común, estaría entre las tres economías más grandes del mundo, siguiendo los pasos de la Unión Europea y los Estados Unidos. Sin embargo, América Latina enfrenta desafíos significativos, como los altos niveles de empleo informal, que obstaculizan el desarrollo económico individual de sus ciudadanos y la región en su conjunto.
 

@@ -29,7 +29,11 @@ import { Image } from "@astrojs/image/components";
         <div class="card-actions justify-end">
           {
             tags &&
-              tags.map((tag) => <div class="badge badge-outline">{tag}</div>)
+              tags.map((tag) => (
+                <a href={`/tag/${encodeURIComponent(tag)}`} class="badge badge-outline hover:bg-base-300">
+                  {tag}
+                </a>
+              ))
           }
         </div>
       </div>
