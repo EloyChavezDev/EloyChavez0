@@ -21,6 +21,17 @@ export default defineConfig({
       'done': async () => {
         const { execSync } = await import('child_process');
         execSync('npx pagefind', { stdio: 'inherit' });
+        // Copiar los archivos de Pagefind al directorio público
+        const { copyFileSync } = await import('fs');
+        const { join } = await import('path');
+        try {
+          copyFileSync(
+            join(process.cwd(), '_pagefind', 'pagefind-ui.js'),
+            join(process.cwd(), 'public', '_pagefind', 'pagefind-ui.js')
+          );
+        } catch (error) {
+          console.error('Error copying Pagefind files:', error);
+        }
       },
     },
   },
