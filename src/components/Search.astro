@@ -1,5 +1,14 @@
 <div class="search-container">
-  <div id="search"></div>
+  <div class="search-header">
+    <h2 class="text-2xl font-bold mb-4">Búsqueda</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-6">Busca en todo el contenido del sitio</p>
+  </div>
+  <div id="search" class="min-h-[400px]">
+    <div class="loading-state text-center py-8">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+      <p class="mt-4 text-gray-600 dark:text-gray-400">Cargando buscador...</p>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -8,7 +17,19 @@
     const script = document.createElement('script');
     script.src = '/_pagefind/pagefind-ui.js';
     script.onload = () => {
-      new window.PagefindUI({ element: "#search", bundlePath: "/_pagefind/", pageSize: 5 });
+      const searchElement = document.getElementById('search');
+      if (searchElement) {
+        new window.PagefindUI({ 
+          element: "#search", 
+          bundlePath: "/_pagefind/", 
+          pageSize: 5,
+          showEmptyFilters: false,
+          showImages: true,
+          showEmptySearch: true,
+          resetStyles: true,
+          searchUrl: "/_pagefind/search-index.json"
+        });
+      }
     };
     document.head.appendChild(script);
   });
@@ -19,5 +40,15 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+  }
+  .search-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 </style> 

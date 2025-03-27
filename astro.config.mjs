@@ -8,7 +8,7 @@ import { join } from 'path';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astrofy-template.netlify.app',
+  site: 'https://eloychavez.dev',
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
