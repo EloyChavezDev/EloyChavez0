@@ -14,52 +14,77 @@
 <script>
   // Cargar los recursos de Pagefind
   window.addEventListener('load', async function() {
-    // Cargar CSS
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = '/_pagefind/pagefind-ui.css';
-    document.head.appendChild(link);
-
-    // Cargar JS
-    const script = document.createElement('script');
-    script.src = '/_pagefind/pagefind-ui.js';
+    const pagefindUIPath = '/_pagefind';
     
-    script.onload = async function() {
-      try {
-        // Esperar a que el índice de búsqueda esté disponible
-        await fetch('/_pagefind/index.json');
-        
-        const searchElement = document.getElementById('search');
-        if (searchElement && window.PagefindUI) {
-          new window.PagefindUI({ 
-            element: "#search",
-            resetStyles: false,
-            showImages: true,
-            translations: {
-              placeholder: "Escribe para buscar...",
-              clear_search: "Limpiar",
-              load_more: "Cargar más resultados",
-              search_label: "Buscar en este sitio",
-              filters_label: "Filtros",
-              zero_results: "No se encontraron resultados para [SEARCH_TERM]",
-              many_results: "Se encontraron [COUNT] resultados para [SEARCH_TERM]",
-              one_result: "Se encontró un resultado para [SEARCH_TERM]",
-              searching: "Buscando [SEARCH_TERM]...",
-              error_loading_results: "Error al cargar los resultados"
-            }
-          });
-        }
-      } catch (error) {
-        console.error('Error initializing search:', error);
-        const searchElement = document.getElementById('search');
-        if (searchElement) {
-          searchElement.innerHTML = '<p class="text-red-500">Error al cargar el buscador. Por favor, intenta recargar la página.</p>';
-        }
-      }
-    };
+    try {
+      // Cargar CSS
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = `${pagefindUIPath}/pagefind-ui.css`;
+      document.head.appendChild(link);
 
-    document.head.appendChild(script);
+      // Cargar JS
+      const script = document.createElement('script');
+      script.src = `${pagefindUIPath}/pagefind-ui.js`;
+      
+      script.onload = async function() {
+        try {
+          // Esperar a que el índice de búsqueda esté disponible
+          const indexResponse = await fetch(`${pagefindUIPath}/pagefind-index.json`);
+          if (!indexResponse.ok) {
+            throw new Error('No se pudo cargar el índice de búsqueda');
+          }
+
+          const searchElement = document.getElementById('search');
+          if (searchElement && window.PagefindUI) {
+            new window.PagefindUI({ 
+              element: "#search",
+              resetStyles: false,
+              showImages: true,
+              bundlePath: pagefindUIPath,
+              translations: {
+                placeholder: "Escribe para buscar...",
+                clear_search: "Limpiar",
+                load_more: "Cargar más resultados",
+                search_label: "Buscar en este sitio",
+                filters_label: "Filtros",
+                zero_results: "No se encontraron resultados para [SEARCH_TERM]",
+                many_results: "Se encontraron [COUNT] resultados para [SEARCH_TERM]",
+                one_result: "Se encontró un resultado para [SEARCH_TERM]",
+                searching: "Buscando [SEARCH_TERM]...",
+                error_loading_results: "Error al cargar los resultados"
+              }
+            });
+
+            // Ocultar el estado de carga
+            const loadingState = searchElement.querySelector('.loading-state');
+            if (loadingState) {
+              loadingState.style.display = 'none';
+            }
+          }
+        } catch (error) {
+          console.error('Error initializing search:', error);
+          showError('Error al inicializar el buscador');
+        }
+      };
+
+      script.onerror = () => {
+        showError('Error al cargar los archivos del buscador');
+      };
+
+      document.head.appendChild(script);
+    } catch (error) {
+      console.error('Error setting up search:', error);
+      showError('Error al configurar el buscador');
+    }
   });
+
+  function showError(message) {
+    const searchElement = document.getElementById('search');
+    if (searchElement) {
+      searchElement.innerHTML = `<p class="text-red-500 text-center py-4">${message}. Por favor, intenta recargar la página.</p>`;
+    }
+  }
 </script>
 
 <style>
