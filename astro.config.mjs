@@ -2,9 +2,9 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
-
-// https://astro.build/config
 import image from "@astrojs/image";
+import { copyFileSync, cpSync } from 'fs';
+import { join } from 'path';
 
 // https://astro.build/config
 export default defineConfig({
@@ -21,14 +21,15 @@ export default defineConfig({
       'done': async () => {
         const { execSync } = await import('child_process');
         execSync('npx pagefind', { stdio: 'inherit' });
-        // Copiar los archivos de Pagefind al directorio público
-        const { copyFileSync } = await import('fs');
-        const { join } = await import('path');
+        
+        // Asegurarse de que el directorio _pagefind existe en public
+        const publicPagefindDir = join(process.cwd(), 'public', '_pagefind');
+        const pagefindDir = join(process.cwd(), '_pagefind');
+        
         try {
-          copyFileSync(
-            join(process.cwd(), '_pagefind', 'pagefind-ui.js'),
-            join(process.cwd(), 'public', '_pagefind', 'pagefind-ui.js')
-          );
+          // Copiar todo el directorio _pagefind a public
+          cpSync(pagefindDir, publicPagefindDir, { recursive: true, force: true });
+          console.log('Pagefind files copied successfully');
         } catch (error) {
           console.error('Error copying Pagefind files:', error);
         }

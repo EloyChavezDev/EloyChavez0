@@ -3,8 +3,15 @@
 </div>
 
 <script>
-  import { PagefindUI } from '@pagefind/default-ui'
-  new PagefindUI({ element: "#search", bundlePath: "/_pagefind/", pageSize: 5 });
+  // Cargar el script de Pagefind de manera dinámica
+  window.addEventListener('load', () => {
+    const script = document.createElement('script');
+    script.src = '/_pagefind/pagefind-ui.js';
+    script.onload = () => {
+      new window.PagefindUI({ element: "#search", bundlePath: "/_pagefind/", pageSize: 5 });
+    };
+    document.head.appendChild(script);
+  });
 </script>
 
 <style>
