@@ -15,5 +15,13 @@ export default defineConfig({
       cacheDir: "./.cache/image",
       logLevel: 'debug',
     }
-  )]
+  )],
+  build: {
+    hooks: {
+      'done': async () => {
+        const { execSync } = await import('child_process');
+        execSync('npx pagefind', { stdio: 'inherit' });
+      },
+    },
+  },
 });
