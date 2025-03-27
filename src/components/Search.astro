@@ -12,25 +12,52 @@
 </div>
 
 <script>
-  // Cargar el script de Pagefind de manera dinámica
-  window.addEventListener('load', () => {
+  // Cargar los recursos de Pagefind
+  window.addEventListener('load', async function() {
+    // Cargar CSS
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/_pagefind/pagefind-ui.css';
+    document.head.appendChild(link);
+
+    // Cargar JS
     const script = document.createElement('script');
     script.src = '/_pagefind/pagefind-ui.js';
-    script.onload = () => {
-      const searchElement = document.getElementById('search');
-      if (searchElement) {
-        new window.PagefindUI({ 
-          element: "#search", 
-          bundlePath: "/_pagefind/", 
-          pageSize: 5,
-          showEmptyFilters: false,
-          showImages: true,
-          showEmptySearch: true,
-          resetStyles: true,
-          searchUrl: "/_pagefind/search-index.json"
-        });
+    
+    script.onload = async function() {
+      try {
+        // Esperar a que el índice de búsqueda esté disponible
+        await fetch('/_pagefind/index.json');
+        
+        const searchElement = document.getElementById('search');
+        if (searchElement && window.PagefindUI) {
+          new window.PagefindUI({ 
+            element: "#search",
+            resetStyles: false,
+            showImages: true,
+            translations: {
+              placeholder: "Escribe para buscar...",
+              clear_search: "Limpiar",
+              load_more: "Cargar más resultados",
+              search_label: "Buscar en este sitio",
+              filters_label: "Filtros",
+              zero_results: "No se encontraron resultados para [SEARCH_TERM]",
+              many_results: "Se encontraron [COUNT] resultados para [SEARCH_TERM]",
+              one_result: "Se encontró un resultado para [SEARCH_TERM]",
+              searching: "Buscando [SEARCH_TERM]...",
+              error_loading_results: "Error al cargar los resultados"
+            }
+          });
+        }
+      } catch (error) {
+        console.error('Error initializing search:', error);
+        const searchElement = document.getElementById('search');
+        if (searchElement) {
+          searchElement.innerHTML = '<p class="text-red-500">Error al cargar el buscador. Por favor, intenta recargar la página.</p>';
+        }
       }
     };
+
     document.head.appendChild(script);
   });
 </script>
@@ -50,5 +77,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  /* Estilos personalizados para Pagefind */
+  :global(.pagefind-ui) {
+    --pagefind-ui-primary: #0ea5e9;
+    --pagefind-ui-text: #374151;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #e5e7eb;
+    --pagefind-ui-border-width: 1px;
+  }
+
+  :global(.dark .pagefind-ui) {
+    --pagefind-ui-primary: #0ea5e9;
+    --pagefind-ui-text: #f3f4f6;
+    --pagefind-ui-background: #1f2937;
+    --pagefind-ui-border: #374151;
+    --pagefind-ui-border-width: 1px;
   }
 </style> 
