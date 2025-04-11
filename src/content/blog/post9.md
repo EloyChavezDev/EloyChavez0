@@ -4,7 +4,7 @@ description: "La informática forense, también conocida como ciberinvestigació
 pubDate: "Mar 05 2024"
 heroImage: "/Introduccion_informatica_forense.png"
 badge: "Mar 05 2024"
-tags: ["ciberseguridad", "tips", "investigacion"]
+tags: ["Ciberseguridad", "Tips", "Investigacion"]
 ---
 La informática forense, también conocida como ciberinvestigación o análisis forense digital, se ha convertido en una disciplina indispensable en la era digital. Esta ciencia se dedica a la identificación, preservación, recuperación, análisis y presentación de evidencia digital en un contexto legal.
 

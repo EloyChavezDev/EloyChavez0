@@ -4,7 +4,7 @@ description: "¡Hola, lectores conscientes de la seguridad en línea! En un mund
 pubDate: "Feb 01 2024"
 heroImage: "/Consejos_Cruciales_de_Ciberseguridad.png"
 badge: "Feb 01 2024"
-tags: ["ciberseguridad","tips","educacion"]
+tags: ["Ciberseguridad","Tips","Educacion"]
 ---
 ### 1. **Verifica si tu contraseña ha sido filtrada: 🤓**
 Antes de seguir, asegúrate de que tu contraseña esté a salvo. Utiliza herramientas como <a href="https://haveibeenpwned.com/Passwords" target="_blank"> Have I Been Pwned</a> para comprobar si tu información ha sido comprometida.

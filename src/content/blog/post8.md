@@ -4,7 +4,7 @@ description: "En un mundo cada vez más digitalizado, la seguridad informática 
 pubDate: "Mar 03 2024"
 heroImage: "/riesgos_y_vulnerabilidades_informaticas.png"
 badge: "Mar 03 2024"
-tags: ["ciberseguridad", "tips", "privacidad"]
+tags: ["Ciberseguridad", "Tips", "Privacidad"]
 ---
 En un mundo cada vez más digitalizado, la seguridad informática se ha convertido en una de las principales preocupaciones tanto para empresas como para usuarios individuales. Los ciberataques son cada vez más frecuentes y sofisticados, y pueden tener un impacto devastador en las organizaciones.
 
