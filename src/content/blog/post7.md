@@ -4,6 +4,7 @@ description: "En este artículo, exploraremos estrategias prácticas para llevar
 pubDate: "Feb 08 2024"
 heroImage: "/Simulacros_Ingenieria_Social_Empresas.png"
 badge: "Feb 08 2024"
+tags: ["ciberseguridad", "tips", "privacidad"]
 ---
 La ingeniería social representa una amenaza constante para la seguridad de las empresas, y la mejor manera de prepararse es a través de simulacros efectivos. Estos ejercicios no solo evalúan la resistencia de una organización ante posibles ataques, sino que también educan al personal sobre las tácticas empleadas por los atacantes. En este artículo, exploraremos estrategias prácticas para llevar a cabo simulacros de ingeniería social que fortalezcan las defensas de tu empresa.
 
