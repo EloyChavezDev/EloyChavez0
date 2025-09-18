@@ -4,7 +4,7 @@ description: "La vida es un viaje lleno de sorpresas y descubrimientos. A menudo
 pubDate: "Aug 27 2022"
 heroImage: "/EloyChavez_platziconf.png"
 badge: "Aug 27 2022"
-tags: ["Tips","Desarrollo Personal", ]
+tags: ["hablar en público", "oratoria", "consejos", "platziconf"]
 ---
 
 > Es normal sentir miedo cuando hablas en público
