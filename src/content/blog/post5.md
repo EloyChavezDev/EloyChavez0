@@ -4,10 +4,10 @@ description: "¡Hola, lectores conscientes de la seguridad en línea! En un mund
 pubDate: "Feb 01 2024"
 heroImage: "/Consejos_Cruciales_de_Ciberseguridad.png"
 badge: "Feb 01 2024"
-tags: ["ciberseguridad", "protección digital", "privacidad", "seguridad online", "tips"]
+tags: ["Ciberseguridad","Tips","Educacion"]
 ---
 ### 1. **Verifica si tu contraseña ha sido filtrada: 🤓**
-Antes de seguir, asegúrate de que tu contraseña esté a salvo. Utiliza herramientas como [Have I Been Pwned](https://haveibeenpwned.com/Passwords) para comprobar si tu información ha sido comprometida.
+Antes de seguir, asegúrate de que tu contraseña esté a salvo. Utiliza herramientas como <a href="https://haveibeenpwned.com/Passwords" target="_blank"> Have I Been Pwned</a> para comprobar si tu información ha sido comprometida.
 
 ### 2. **Activa la monitorización en Google: 🐛**
 Refuerza la seguridad de tu cuenta de Google activando la monitorización de información. Mantén un ojo en cualquier actividad sospechosa.
@@ -25,7 +25,7 @@ Los antivirus son herramientas poderosas, pero su efectividad depende del conoci
 Actualizar tus dispositivos y software es crucial. Las versiones desactualizadas pueden exponerte a vulnerabilidades, malware y ataques de día cero.
 
 ### 7. **Explora StaySafeOnline para la seguridad familiar: 🟢**
-Visita [StaySafeOnline](https://staysafeonline.org/) para recursos sobre seguridad informática familiar. Ofrecen consejos prácticos y herramientas para proteger a tus seres queridos en línea.
+Visita <a href="https://staysafeonline.org/" target="_blank">StaySafeOnline</a> para recursos sobre seguridad informática familiar. Ofrecen consejos prácticos y herramientas para proteger a tus seres queridos en línea.
 
 ### 8. **Comprende las brechas de seguridad: 🔍**
 Conoce los riesgos de las brechas de seguridad, que pueden implicar acceso no autorizado, fugas de datos, vulnerabilidades de software y más.

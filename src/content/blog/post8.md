@@ -4,6 +4,7 @@ description: "En un mundo cada vez más digitalizado, la seguridad informática 
 pubDate: "Mar 03 2024"
 heroImage: "/riesgos_y_vulnerabilidades_informaticas.png"
 badge: "Mar 03 2024"
+tags: ["Ciberseguridad", "Tips", "Privacidad"]
 ---
 En un mundo cada vez más digitalizado, la seguridad informática se ha convertido en una de las principales preocupaciones tanto para empresas como para usuarios individuales. Los ciberataques son cada vez más frecuentes y sofisticados, y pueden tener un impacto devastador en las organizaciones.
 
@@ -52,10 +53,10 @@ Las organizaciones y usuarios individuales deben tomar medidas para protegerse d
 Recuerda que la seguridad informática es responsabilidad de todos.
 
 ### Aquí tienes algunos recursos adicionales para obtener más información sobre la gestión de riesgos y vulnerabilidades informáticas:
-OWASP Top 10: https://owasp.org/www-project-top-ten/
-ISO/IEC 27001: https://www.iso.org/isoiec-27001-information-security.html
-National Institute of Standards and Technology (NIST): https://www.nist.gov/cyberframework
+- OWASP Top 10: <a href="https://www.youtube.com/watch?v=Qo8PSmxJejM&t=45s" target="_blank">https://owasp.org/www-project-top-ten/</a>
+- ISO/IEC 27001: <a href="https://www.youtube.com/watch?v=Qo8PSmxJejM&t=45s" target="_blank">https://www.iso.org/isoiec-27001-information-security.html</a>
+- National Institute of Standards and Technology (NIST): <a href="https://www.youtube.com/watch?v=Qo8PSmxJejM&t=45s" target="_blank">https://www.nist.gov/cyberframework</a>
 
 ¡Espero que este artículo te haya resultado útil!
 
-## **Si tienes alguna pregunta, no dudes en contactarme**
+# **Si tienes alguna pregunta, no dudes en contactarme**

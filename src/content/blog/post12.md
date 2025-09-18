@@ -4,6 +4,7 @@ description: "Al llegar a la mitad de lo que espero sea mi esperanza de vida, ho
 pubDate: "May 11 2024"
 heroImage: "/2024/Mayo/level35.webp"
 badge: "May 11 2024"
+tags: ["Reflexion","Personal"]
 ---
 
 Al llegar a la mitad de lo que espero sea mi esperanza de vida, hoy celebro 35 años de existencia. Es un momento de pausa, de reflexión, de mirar hacia atrás para entender el camino recorrido y hacia adelante para vislumbrar lo que está por venir, es como estar en la cima de una colina, mirando hacia atrás y hacia adelante al mismo tiempo.
