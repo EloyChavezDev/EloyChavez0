@@ -7,7 +7,7 @@ badge: "Aug 27 2022"
 tags: ["Tips","Desarrollo Personal", ]
 ---
 
-> Es normal sentir miedo cuando hablas en público
+> Es normal sentir miedo cuando hablas en público 
 
 Es la primera frase que escuchamos de Freddy Vega en su curso de como hablar en publico y no es una simple coincidencia.
 
