@@ -4,7 +4,6 @@ description: "A comprehensive glossary of cybersecurity terms to help you unders
 pubDate: "Mar 06 2024"
 heroImage: "/Cybersecurity_Glossary.png"
 badge: "Mar 06 2024"
-tags: ["Investigacion","Ciberseguridad","English"]
 ---
 ### 1. Access Control: The process of managing who has access to what resources, such as files, applications, and networks.
 

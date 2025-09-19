@@ -1,0 +1,123 @@
+<div class="search-container">
+  <div class="search-header">
+    <h2 class="text-2xl font-bold mb-4">Búsqueda</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-6">Busca en todo el contenido del sitio</p>
+  </div>
+  <div id="search" class="min-h-[400px]">
+    <div class="loading-state text-center py-8">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+      <p class="mt-4 text-gray-600 dark:text-gray-400">Cargando buscador...</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Cargar los recursos de Pagefind
+  window.addEventListener('load', async function() {
+    const pagefindUIPath = '/_pagefind';
+    
+    try {
+      // Cargar CSS
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = `${pagefindUIPath}/pagefind-ui.css`;
+      document.head.appendChild(link);
+
+      // Cargar JS
+      const script = document.createElement('script');
+      script.src = `${pagefindUIPath}/pagefind-ui.js`;
+      
+      script.onload = async function() {
+        try {
+          // Esperar a que el índice de búsqueda esté disponible
+          const indexResponse = await fetch(`${pagefindUIPath}/pagefind-index.json`);
+          if (!indexResponse.ok) {
+            throw new Error('No se pudo cargar el índice de búsqueda');
+          }
+
+          const searchElement = document.getElementById('search');
+          if (searchElement && window.PagefindUI) {
+            new window.PagefindUI({ 
+              element: "#search",
+              resetStyles: false,
+              showImages: true,
+              bundlePath: pagefindUIPath,
+              translations: {
+                placeholder: "Escribe para buscar...",
+                clear_search: "Limpiar",
+                load_more: "Cargar más resultados",
+                search_label: "Buscar en este sitio",
+                filters_label: "Filtros",
+                zero_results: "No se encontraron resultados para [SEARCH_TERM]",
+                many_results: "Se encontraron [COUNT] resultados para [SEARCH_TERM]",
+                one_result: "Se encontró un resultado para [SEARCH_TERM]",
+                searching: "Buscando [SEARCH_TERM]...",
+                error_loading_results: "Error al cargar los resultados"
+              }
+            });
+
+            // Ocultar el estado de carga
+            const loadingState = searchElement.querySelector('.loading-state');
+            if (loadingState) {
+              loadingState.style.display = 'none';
+            }
+          }
+        } catch (error) {
+          console.error('Error initializing search:', error);
+          showError('Error al inicializar el buscador');
+        }
+      };
+
+      script.onerror = () => {
+        showError('Error al cargar los archivos del buscador');
+      };
+
+      document.head.appendChild(script);
+    } catch (error) {
+      console.error('Error setting up search:', error);
+      showError('Error al configurar el buscador');
+    }
+  });
+
+  function showError(message) {
+    const searchElement = document.getElementById('search');
+    if (searchElement) {
+      searchElement.innerHTML = `<p class="text-red-500 text-center py-4">${message}. Por favor, intenta recargar la página.</p>`;
+    }
+  }
+</script>
+
+<style>
+  .search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .search-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilos personalizados para Pagefind */
+  :global(.pagefind-ui) {
+    --pagefind-ui-primary: #0ea5e9;
+    --pagefind-ui-text: #374151;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #e5e7eb;
+    --pagefind-ui-border-width: 1px;
+  }
+
+  :global(.dark .pagefind-ui) {
+    --pagefind-ui-primary: #0ea5e9;
+    --pagefind-ui-text: #f3f4f6;
+    --pagefind-ui-background: #1f2937;
+    --pagefind-ui-border: #374151;
+    --pagefind-ui-border-width: 1px;
+  }
+</style> 

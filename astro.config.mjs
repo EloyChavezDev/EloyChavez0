@@ -4,16 +4,21 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
-import image from "@astrojs/image";
-
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://astrofy-template.netlify.app',
-  integrations: [mdx(), sitemap(), tailwind(), image(
-    {
-      serviceEntryPoint: '@astrojs/image/sharp',
-      cacheDir: "./.cache/image",
-      logLevel: 'debug',
-    }
-  )]
+  site: 'https://eloychavez.dev',
+  integrations: [mdx(), sitemap(), tailwind()],
+  build: {
+    hooks: {
+      'done': async () => {
+        const { execSync } = await import('child_process');
+        try {
+          // Ejecutar Pagefind y especificar el directorio de salida
+          execSync('npx pagefind --source dist --bundle-dir _pagefind', { stdio: 'inherit' });
+          console.log('Pagefind indexing completed successfully');
+        } catch (error) {
+          console.error('Error running Pagefind:', error);
+        }
+      },
+    },
+  },
 });

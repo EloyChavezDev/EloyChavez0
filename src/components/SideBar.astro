@@ -1,8 +1,8 @@
 ---
-import SideBarFooter from "./SideBarFooter.astro";
-import { Image } from "@astrojs/image/components";
-import SideBarMenu from "./SideBarMenu.astro";
+import { Image } from 'astro:assets';
+
 const { sideBarActiveItemID } = Astro.props;
+const activeClass = "bg-base-300"; // For primary color replace with `active` class
 ---
 
 <div class="drawer-side z-40">
@@ -12,13 +12,38 @@ const { sideBarActiveItemID } = Astro.props;
       <a href="/">
         <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
           <div class="w-[8.5rem]">
-            <Image class="mask mask-circle" aspectRatio="1:1" format="webp" width={300} height={300} src="/profile.png" alt="Profile image" />
+            <Image 
+              class="mask mask-circle" 
+              width={300} 
+              height={300} 
+              src="/profile.jpg" 
+              alt="Profile image" 
+            />
           </div>
-        <center><b><h4>EloyChavezDev</h4></b></center>
         </div>
       </a>
     </div>
-    <SideBarMenu sideBarActiveItemID={sideBarActiveItemID} />
-    <SideBarFooter />
+    <ul class="menu grow shrink menu-md overflow-y-auto">
+      <li><a class="py-3 text-base" id="home" href="/">🏠 Home</a></li>
+      <li><a class="py-3 text-base" id="projects" href="/projects">👨🏻‍💻 Proyectos</a></li>
+      <li><a class="py-3 text-base" id="social" href="/social">✨ Redes Sociales</a></li>
+      <li><a class="py-3 text-base" id="blog" href="/blog/">✍🏻 Blog</a></li>
+      <li><a class="py-3 text-base" id="tags" href="/tags">🏷️ Etiquetas</a></li>
+      <li><a class="py-3 text-base" id="cv" href="/cv">📄 CV</a></li>
+      <li><a class="py-3 text-base" id="contact" href="mailto:eloychavezdev@gmail.com">📧 Contacto</a></li>
+    </ul>
+    <div class="social-icons px-4 my-2 flex self-center">
+      <a href="https://tryhackme.com/p/EloyChavezDev" target="_blank" class="mx-3" aria-label="TryHackMe">
+        <img src="https://tryhackme.com/badge/2740252" alt="TryHackMe">
+      </a>
+    </div>
   </aside>
 </div>
+
+<script define:vars={{ sideBarActiveItemID }}>
+  const activeItemElem = document.getElementById(sideBarActiveItemID || "");
+  if (activeItemElem) {
+    activeItemElem.classList.add("bg-base-300");
+  }
+</script>
+

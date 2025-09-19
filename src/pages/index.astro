@@ -9,27 +9,18 @@ const last_posts = posts.slice(0, 3);
 ---
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">👋🏻 Hola</div>
+    <div class="text-xl py-1">Hola 👋</div>
     <div class="text-5xl font-bold">Soy Eloy Chavez</div>
-    <div class="text-3xl py-3 font-bold">💻 Tecnólogo apasionado | Docente & Desarrollador Web</div>
+    <div class="text-3xl py-3 font-bold">📁 Apasionado tecnólogo y creador digital</div>
     <div class="py-2">
       <text class="text-lg">
-        <p>Fusiono educación, tecnología y creatividad para transformar ideas en soluciones digitales con impacto.</p>
-        </br>
-        <ul>
-          <p>Me especializo en:</p>
-          <li><strong>Desarrollo web</strong> que potencia proyectos educativos y empresariales.</li>
-          <li><strong>Formación tecnológica</strong>, guiando a futuros profesionales en el mundo digital.</li>
-          <li><strong>Ciberseguridad y marca personal</strong>, ayudando a construir presencia digital segura y auténtica.</li>
-        </ul>
-        </br>
-        <p><em>"La tecnología es mi herramienta para democratizar el conocimiento y resolver desafíos reales."</em></p>
-        <p><a href="https://eloychavez.dev/social/">👉 ¿Listo para innovar? <strong>Hablemos.</strong></a></p>
+        Fusiono la creatividad con la innovación para crear soluciones digitales.
+        <b>Mi pasión es convertir problemas en oportunidades</b>, utilizando la tecnología para crear un impacto significativo en tus proyectos.
       </text>
     </div>
     <div class="mt-8">
       <a class="btn" href="https://www.youtube.com/@eloychavezdev" target="_blank">❤ Youtube</a>
-      <a href="https://tips.eloychavez.dev/" target="_blank" class="btn btn-outline ml-5">✍🏻 Tips de Tecnología</a>
+      <a href="https://bitacora.eloychavez.dev/" target="_blank" class="btn btn-outline ml-5">✍🏻 Bitacora</a>
     </div>
   </div>
 
@@ -37,28 +28,36 @@ const last_posts = posts.slice(0, 3);
     <div class="text-3xl w-full font-bold mb-5 mt-2">Ultimos proyectos {"</>"}</div>
   </div>
   <HorizontalCard
-    title="Landing Boda Ines&Pedro"
-    img="/InesyPedro.png"
-    desc="Landing page para boda con enfoque mobile-first: diseño limpio y responsive que priorizó la experiencia de usuario en smartphones, integrando detalles clave (fecha, ubicación, RSVP) con interacciones intuitivas y estilo visual elegante. Desarrollado con HTML5, CSS3 y JavaScript para garantizar rapidez y accesibilidad."
-    url="https://boda-inesypedro.netlify.app/"
-    badge="2024"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Landing XV años Zoe"
-    img="/XV.png"
-    desc="El proyecto consiste en desarrollar una landing page interactiva y visualmente atractiva para celebraciones de XV años, combinando la creatividad y habilidades técnicas de dos programadores que llevamos a cabo este proyecto."
-    url="https://nonamoes.github.io/zoe/"
-    badge="2024"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
   title="UCADocs"
   img="/UCADocs.png"
   desc="El proyecto consiste en desarrollar un sistema de gestión documental para centralizar y organizar la documentación del departamento de tecnologías de la Universidad Continente Americano"
   url="https://ucadocs.eloychavez.dev/"
   badge="2024"
   />
+  <HorizontalCard
+    title="Newsletter LinkedIn"
+    img="/Newsletter_EloyChavezDev.png"
+    desc="Creación y gestión de un newsletter, donde aprovecho mi enfoque creativo para ofrecer contenido relevante y estimulante. Mi pasión por la tecnología y la narrativa digital me impulsa a continuar explorando nuevas formas de generar impacto."
+    url="https://www.linkedin.com/newsletters/7097609236016242688/"
+    badge="2023-2024"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="CM Instituto Americano Enfermería"
+    img="/Instituto_Americano_Celaya.jpg"
+    desc="Dirijo la comunidad en línea en Facebook con entusiasmo y profesionalismo. A través de estrategias de contenido cautivador y participación activa, cultivo un espacio donde los seguidores no solo se informan, sino que también se sienten valorados y escuchados. Mi objetivo es crear un ambiente digital enriquecedor donde las interacciones fluyan y la marca se destaque."
+    url="https://www.facebook.com/InstitutoAmericanoEnfermeria"
+    badge="2023-2024"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Website Instituto Americano"
+    img="/Instituto_Americano.png"
+    desc="Diseñé y desarrollé un sitio web dinámico y funcional para una institución educativa, ofreciendo a estudiantes, padres y personal acceso intuitivo a información clave, recursos educativos y noticias relevantes en un entorno en línea amigable y atractivo."
+    url="https://instituto-americano.edu.mx/"
+    badge="2021-2023"
+  />
+  <div class="divider my-0"></div>
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">✍🏻 Ultimos Post</div>
@@ -76,11 +75,12 @@ const last_posts = posts.slice(0, 3);
           badge={post.data.badge}
           tags={post.data.tags}
         />
+        <div class="divider my-0" />
       </>
     ))
   }
-<div class="mt-10">
-  <div class="text-3xl w-full font-bold mb-5">Contribuciones del ultimo año</div>
-  <img src="https://ghchart.rshah.org/eloychavezdev" alt="GitHub Contributions Chart" />
-</div>
+
+  
+  );
+  </script>
 </BaseLayout>
